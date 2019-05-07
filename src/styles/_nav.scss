@@ -1,0 +1,38 @@
+@import './color';
+
+.nav-wrapper {
+  padding: 0;
+  margin: 0;
+
+  li {
+    height: 45px;
+    line-height: 45px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  
+    a {
+      font-size: 14px;
+    }
+  
+    i {
+      color: #fff;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+  
+  li.active, li:hover {
+    background-color: #3a4a5b;
+    a, i {
+      color: $color-primary;
+    }
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
