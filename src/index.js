@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import './style.css';
 import './fonts.css';
-import Logo from './logo.svg';
 
 function component() {
   var element = document.createElement('div');
@@ -10,12 +9,7 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello');
 
-  // 将图像添加到我们现有的 div。
-  var myIcon = new Image();
-  myIcon.src = Logo;
-
-  element.appendChild(myIcon);
-
+  console.error('I get called from index.js!');
   return element;
 }
 
