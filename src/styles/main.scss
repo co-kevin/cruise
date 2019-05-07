@@ -19,13 +19,22 @@ header {
   background-size: auto 50%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   background-color: #fff;
-}
 
-header .container {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .avatar {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: yellow;
+    margin-right: 20px;
+  }
 }
 
 .container {
@@ -39,7 +48,6 @@ main {
 
 nav {
   width: 290px;
-  
   background-color: #314052;
   height: calc(100vh - 60px);
 }
@@ -48,23 +56,33 @@ article {
   padding-left: 35px;
   padding-top: 20px;
   flex: 1;
+  
 }
 
 .dashbord {
   display: flex;
   justify-content: space-between;
+
+  div {
+    width: 270px;
+    height: 115px;
+    background-color: #fff;
+  }
 }
 
-.dashbord div {
-  width: 270px;
-  height: 115px;
+.tabs {
+  margin-top: 20px;
+  height: 50px;
+  background-color: #fff;
 }
 
-.avatar {
-  display: block;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  background-color: green;
-  margin-right: 20px;
+.agent-wrapper {
+  height: calc(100vh - 285px);
+  overflow: auto;
+
+  .agent {
+    margin-top: 20px;
+    height: 110px;
+    background-color: #fff;
+  }
 }
