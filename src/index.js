@@ -1,4 +1,1 @@
-import _ from 'lodash';
-import './style.css';
-import './fonts.css';
-
+import './styles/main.scss';
