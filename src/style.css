@@ -1,4 +1,68 @@
-.hello {
-  color: red;
-  background: url('./logo.svg');
+html, body {
+  margin: 0;
+  background-color: #f2f2f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dev {
+  border: red 1px solid;
+}
+
+header {
+  height: 60px;
+  background: url('./logo.svg') center no-repeat;
+  background-size: auto 50%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  background-color: #fff;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  width: 290px;
+  
+  background-color: #314052;
+  height: calc(100vh - 60px);
+}
+
+article {
+  padding-left: 35px;
+  padding-top: 20px;
+  flex: 1;
+}
+
+.dashbord {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashbord div {
+  width: 270px;
+  height: 115px;
+}
+
+.avatar {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: green;
+  margin-right: 20px;
 }
