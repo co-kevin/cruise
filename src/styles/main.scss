@@ -93,14 +93,72 @@ article {
   
 }
 
-.dashbord {
+.status-wrapper {
   display: flex;
   justify-content: space-between;
 
-  div {
-    width: 270px;
-    height: 115px;
+  $block-width: 270px;
+  $block-height: 130px;
+
+  .machine {
+    width: $block-width;
+    height: $block-height;
     background-color: #fff;
+    display: flex;
+    .category {
+      height: 100%;
+      width: 33.33%;
+      text-align: center;
+    }
+    .title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 12px;
+    }
+    .count {
+      height: $block-height - 60px;
+      line-height: $block-height - 60px;
+      font-size: 20px;
+    }
+  }
+
+  .block {
+    position: relative;
+    width: $block-width;
+    height: $block-height;
+    color: #fff;
+    background-color: #fff;
+
+    i {
+      position: absolute;
+      opacity: .2;
+      font-size: 144px;
+      left: 80px;
+      top: -9px;
+    }
+
+    .name {
+      margin: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .count {
+      text-align: right;
+      font-size: 48px;
+      margin-right: 20px;
+    }
+  }
+
+  .buiding {
+    background-color: $color-warning;
+  }
+
+  .idle {
+    i {
+      left: 50px;
+    }
+    background-color: $color-success;
   }
 }
 
@@ -113,9 +171,10 @@ article {
 .agent-wrapper {
   height: calc(100vh - 285px);
   overflow: auto;
+  margin-top: 20px;
 
   .agent {
-    margin-top: 20px;
+    margin-bottom: 20px;
     height: 110px;
     background-color: #fff;
   }
