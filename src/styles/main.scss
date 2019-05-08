@@ -43,6 +43,19 @@ header {
   }
 }
 
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.icon-cog {
+  animation: spin 2s linear infinite;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
