@@ -206,8 +206,28 @@ main {
       width: 130px;
       height: 100%;
       margin-right: 10px;
-      background: url(../os_icons/windows.png) center no-repeat;
-      background-size: auto 80%;
+      background: center no-repeat;
+      background-size: auto 80px;
+
+      &.windows {
+        background-image: url(../assets/windows.png);
+      }
+
+      &.cent_os {
+        background-image: url(../assets/cent_os.png);
+      }
+
+      &.debin {
+        background-image: url(../assets/debin.png);
+      }
+
+      &.suse {
+        background-image: url(../assets/suse.png);
+      }
+
+      &.ubuntu {
+        background-image: url(../assets/ubuntu.png);
+      }
     }
   }
 

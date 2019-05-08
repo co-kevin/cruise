@@ -8,30 +8,48 @@
     "path": "/var/lib/cruise-agent",
     "resources": [
       "Firefox",
-      "Safari"
+      "Safari",
+      "Ubuntu",
+      "Chrome"
     ]
   },
   {
     "id": 2,
-    "os": "windows",
+    "os": "cent_os",
     "host": "bjstdmngbgr02.thoughtworks.com",
     "status": "idle",
     "ipaddr": "192.168.1.117",
     "path": "/var/lib/cruise-agent",
     "resources": [
       "Firefox",
+      "Safari",
       "Ubuntu",
       "Chrome"
     ]
   },
   {
     "id": 3,
-    "os": "windows",
+    "os": "debin",
     "host": "bjstdmngbgr03.thoughtworks.com",
     "status": "idle",
     "ipaddr": "192.168.1.118",
     "path": "/var/lib/cruise-agent",
     "resources": [
+      "Firefox",
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  },
+  {
+    "id": 4,
+    "os": "ubuntu",
+    "host": "bjstdmngbgr03.thoughtworks.com",
+    "status": "idle",
+    "ipaddr": "192.168.1.118",
+    "path": "/var/lib/cruise-agent",
+    "resources": [
+      "Firefox",
       "Safari",
       "Ubuntu",
       "Chrome"
