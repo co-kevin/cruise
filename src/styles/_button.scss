@@ -1,0 +1,43 @@
+@import './color';
+
+$btn-height: 30px;
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  background-color: $color-primary;
+  color: #fff;
+  height: $btn-height;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.btn:active {
+  background-color: $color-primary-forcus;
+}
+
+.btn.plus {
+  padding: 0;
+
+  i {
+    width: $btn-height;
+    height: $btn-height;
+    line-height: $btn-height;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+.btn.btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+
+  i {
+    height: $btn-height;
+    line-height: $btn-height;
+    color: #fff;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+}

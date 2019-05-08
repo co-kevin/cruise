@@ -2,6 +2,7 @@
 @import './color';
 @import './nav';
 @import './tabs';
+@import './button';
 
 html, body {
   margin: 0;
@@ -10,6 +11,7 @@ html, body {
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 .dev {
@@ -87,11 +89,10 @@ main {
   display: flex;
 }
 
-article {
+#router-view {
   padding-left: 35px;
   padding-top: 20px;
   flex: 1;
-  
 }
 
 .status-wrapper {
@@ -106,6 +107,7 @@ article {
     height: $block-height;
     background-color: #fff;
     display: flex;
+
     .category {
       height: 100%;
       width: 33.33%;
@@ -163,6 +165,10 @@ article {
   }
 }
 
+.mgr10 {
+  margin-right: 10px;
+}
+
 .tabs {
   margin-top: 20px;
   height: 50px;
@@ -170,14 +176,84 @@ article {
 }
 
 .agent-wrapper {
-  height: calc(100vh - 285px);
+  height: calc(100vh - 305px);
   overflow: auto;
   margin-top: 20px;
 
   .agent {
+    display: flex;
     margin-bottom: 20px;
     height: 110px;
     background-color: #fff;
+
+    .os {
+      width: 130px;
+      height: 100%;
+      margin-right: 10px;
+      background: url(../os_icons/windows.png) center no-repeat;
+      background-size: auto 80%;
+    }
+  }
+
+  .icon-desktop {
+    margin-right: 10px;
+  }
+
+  .host {
+    cursor: pointer;
+    color: $color-primary;
+    margin-right: 10px;
+  }
+
+  .status {
+    margin-right: 10px;
+  }
+
+  i {
+    color: #a8a8a8;
+    font-size: 20px;
+    // align items center correct
+    padding-bottom: 2px;
+  }
+
+  .field-row {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px;
+  }
+
+  .options {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    line-height: 100%;
+  }
+
+  .resources {
+    display: flex;
+  }
+
+  .resource {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 12px;
+    line-height: 30px;
+    margin-left: 10px;
+    background-color: #EFEFEF;
+
+    .name {
+      color: #334658;
+      font-weight: 450;
+      margin-right: 10px;
+    }
+
+    .icon-trash {
+      cursor: pointer;
+      color: #334658;
+    }
   }
 }
 
