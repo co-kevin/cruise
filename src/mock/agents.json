@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "os": "windows",
+    "host": "bjstdmngbgr01.thoughtworks.com",
+    "status": "buiding",
+    "ipaddr": "192.168.1.116",
+    "path": "/var/lib/cruise-agent",
+    "resources": [
+      "Firefox",
+      "Safari"
+    ]
+  },
+  {
+    "id": 2,
+    "os": "windows",
+    "host": "bjstdmngbgr02.thoughtworks.com",
+    "status": "idle",
+    "ipaddr": "192.168.1.117",
+    "path": "/var/lib/cruise-agent",
+    "resources": [
+      "Firefox",
+      "Ubuntu",
+      "Chrome"
+    ]
+  },
+  {
+    "id": 3,
+    "os": "windows",
+    "host": "bjstdmngbgr03.thoughtworks.com",
+    "status": "idle",
+    "ipaddr": "192.168.1.118",
+    "path": "/var/lib/cruise-agent",
+    "resources": [
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  }
+]
