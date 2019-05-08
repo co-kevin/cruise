@@ -1,8 +1,9 @@
 {
   "name": "cruise",
   "version": "1.0.0",
-  "description": "In modern agile software development practice, there is a development practice called \"Continuous Integration (CI)\", which needs to generate  a deployable version at any time, any place. Usually in the actual development, the developer push the code  to the code library, and this will automatically trigger a series of actions, such as code checking, compiling, running testing, packaging. These steps are run through automated scripts to a group of servers, and we would like to create a product like CRUISE, which can easily manage these servers, monitor or set the status.",
+  "description": "Home Test from ThoughtWorks",
   "author": "Hooks Zhang",
+  "email": "hookszhang@gmail.com",
   "license": "MIT",
   "private": true,
   "scripts": {
