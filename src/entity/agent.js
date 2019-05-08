@@ -1,7 +1,6 @@
-import AgentTemplate from './components/agent.html'
-import Agents from './mock/agents'
+import AgentItemTemplate from '../components/agent-item.html'
 
-class Agent {
+export default class Agent {
   constructor(raw) {
     this.id = raw.id
     this.os = raw.os
@@ -13,8 +12,8 @@ class Agent {
   }
 
   deleteResource (resource) {
-    const index = this.resources.findIndex(resource)
-    if (index) {
+    const index = this.resources.findIndex(r => r === resource)
+    if (index === 0 || index) {
       this.resources.splice(index, 1)
     }
   }
@@ -25,7 +24,7 @@ class Agent {
 
   render () {
     const AgentDiv = document.createElement('div')
-    AgentDiv.innerHTML = AgentTemplate
+    AgentDiv.innerHTML = AgentItemTemplate
     
     const os = AgentDiv.querySelector('[name=os]')
     const host = AgentDiv.querySelector('[name=host]')
@@ -45,24 +44,11 @@ class Agent {
       resourcesHTML += `
       <div class="resource" name="resource">
         <span class="name">${r}</span>
-        <i class="icon-trash" onclick="removeResource(this)"></i>
-      </div>
-      `
+        <i class="icon-trash" onclick="AgentCtrl.deleteResource(${this.id}, '${r}')"></i>
+      </div>`
     })
     resources.innerHTML = resourcesHTML
 
     return AgentDiv
   }
-}
-
-export function renderAgents (agents) {
-  const agentList = document.getElementById('agent-list')
-  agents.forEach(raw => {
-    const agent = new Agent(raw)
-    agentList.appendChild(agent.render())
-  })
-}
-
-window.onload = () => {
-  renderAgents(Agents)
 }
