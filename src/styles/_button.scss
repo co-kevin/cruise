@@ -18,12 +18,12 @@ $btn-height: 30px;
 
 .btn.plus {
   padding: 0;
+  display: inline-flex;
+  align-items: center;
 
   i {
+    margin-top: 3px;
     width: $btn-height;
-    height: $btn-height;
-    line-height: $btn-height;
-    display: inline-block;
     color: #fff;
     font-size: 18px;
   }
