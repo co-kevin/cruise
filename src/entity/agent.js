@@ -32,12 +32,14 @@ export default class Agent {
     const ipaddr = AgentDiv.querySelector('[name=ipaddr]')
     const path = AgentDiv.querySelector('[name=path]')
     const resources = AgentDiv.querySelector('[name=resources]')
+    const btn = AgentDiv.querySelector('.btn.plus')
 
     os.classList.add(this.os)
     host.innerHTML = this.host
     status.innerHTML = this.status
     ipaddr.innerHTML = this.ipaddr
     path.innerHTML = this.path
+    btn.setAttribute('data-id', this.id)
     
     let resourcesHTML = ''
     this.resources.forEach(r => {

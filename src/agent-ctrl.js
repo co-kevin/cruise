@@ -21,7 +21,7 @@ class AgentCtrl {
 
   static openAddResourceDialog (agentId) {
     document.getElementById('resource-input').value = ''
-    currentDialogAgentId = agentId
+    currentDialogAgentId = Number(agentId)
     window.Dialog.open()
   }
 }
