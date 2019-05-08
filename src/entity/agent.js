@@ -18,8 +18,8 @@ export default class Agent {
     }
   }
 
-  addResource (resource) {
-    this.resources.push(resource)
+  addResources (resources) {
+    this.resources.push(...resources)
   }
 
   render () {

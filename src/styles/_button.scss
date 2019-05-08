@@ -12,8 +12,21 @@ $btn-height: 30px;
   padding: 0 15px;
 }
 
+.btn+.btn {
+  margin-left: 10px;
+}
+
 .btn:active {
   background-color: $color-primary-forcus;
+}
+
+.btn.danger {
+  min-width: 120px;
+  background-color: $color-danger;
+}
+
+.btn.danger:active {
+  background-color: $color-danger-forcus;
 }
 
 .btn.plus {

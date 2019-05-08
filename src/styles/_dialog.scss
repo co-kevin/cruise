@@ -1,0 +1,31 @@
+@import './color';
+
+.dialog-container {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.3);
+  
+  .dialog {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30vh;
+    padding: 10px 20px;
+    width: 570px;
+    border: 1px solid $color-primary;
+    background-color: #fff;
+  }
+  
+  .icon-close {
+    cursor: pointer;
+    color: $color-primary;
+    font-size: 22px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}

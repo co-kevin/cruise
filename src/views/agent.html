@@ -31,6 +31,20 @@
   <div class="tab">Virtual</div>
 </div>
 
-<div id="agent-list" class="agent-wrapper">
-  
+<div id="agent-list" class="agent-wrapper"></div>
+
+<div id="dialog" class="dialog-container">
+  <div class="dialog">
+    <i class="icon-close" onclick="Dialog.close()"></i>
+    <div class="dialog-content">
+      <p style="color: #666;">
+        Separate multiple resource name with commas
+      </p>
+      <input id="resource-input" class="primary" type="text" placeholder="e.g. Chrome, Firefox">
+    </div>
+    <p class="dialog-footer">
+      <button class="btn" onclick="AgentCtrl.addResources(Dialog.data)">Add Resources</button>
+      <button class="btn danger" onclick="Dialog.close()">Cancel</button>
+    </p>
+  </div>
 </div>

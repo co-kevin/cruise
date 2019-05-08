@@ -50,4 +50,12 @@ export default class ApiAgent {
     agent.deleteResource(resourceName)
     save(agent)
   }
+
+  static addResources(agentId, resources) {
+    let agent = findById(agentId)
+    if (!agent) return
+
+    agent.addResources(resources)
+    save(agent)
+  }
 }
