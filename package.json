@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --mode production",
-    "test": "mochapack 'test/**.js' -r mock-local-storage --webpack-config webpack.dev.js"
+    "test": "mochapack 'test/**.js' -r mock-local-storage --webpack-config webpack.test.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
