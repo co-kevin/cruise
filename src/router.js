@@ -1,5 +1,6 @@
-import AgentPage from './views/agent.html'
-import './agent-ctrl'
+import AgentView from './views/agent/agent.html'
+import './views/agent/agent-ctrl'
 
+// default router view is AgentView
 const routerView = document.getElementById('router-view')
-routerView.innerHTML = AgentPage
+routerView.innerHTML = AgentView

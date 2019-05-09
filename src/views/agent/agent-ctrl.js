@@ -1,4 +1,4 @@
-import ApiAgent from './mock/api_agent'
+import ApiAgent from '../../mock/api_agent'
 
 let currentDialogAgentId
 
