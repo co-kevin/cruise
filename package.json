@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --mode production",
-    "test": "mocha"
+    "test": "mochapack 'test/**.js' -r mock-local-storage --webpack-config webpack.dev.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -22,6 +22,8 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
     "mocha": "^6.1.4",
+    "mochapack": "^1.1.1",
+    "mock-local-storage": "^1.1.8",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",

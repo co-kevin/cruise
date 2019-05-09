@@ -28,3 +28,11 @@ yarn serve
 ```
 yarn build
 ```
+
+### Mocha Test
+
+`mochapack` fixed https://github.com/zinserjan/mocha-webpack/issues/304
+
+```
+yarn test
+```
