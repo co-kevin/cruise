@@ -4,3 +4,4 @@ import './views/agent/agent-ctrl'
 // default router view is AgentView
 const routerView = document.getElementById('router-view')
 routerView.innerHTML = AgentView
+document.title = 'Agent | CRUISE'
