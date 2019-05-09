@@ -25,10 +25,22 @@
   </div>
 </div>
 
-<div class="tabs">
-  <div class="tab active">All</div>
-  <div class="tab">Physical</div>
-  <div class="tab">Virtual</div>
+<div class="search-bar">
+  <div class="tabs">
+    <div class="tab active">All</div>
+    <div class="tab">Physical</div>
+    <div class="tab">Virtual</div>
+  </div>
+  <div class="keywords">
+    <div class="input-group">
+      <i class="icon-search"></i>
+      <input type="text">
+    </div>
+  </div>
+  <div class="view-type">
+    <i class="icon-th-card"></i>
+    <i class="icon-th-list active"></i>
+  </div>
 </div>
 
 <div id="agent-list" class="agent-wrapper"></div>
@@ -43,7 +55,7 @@
       <input id="resource-input" class="primary" type="text" placeholder="e.g. Chrome, Firefox">
     </div>
     <p class="dialog-footer">
-      <button class="btn" onclick="AgentCtrl.addResources(Dialog.data)">Add Resources</button>
+      <button class="btn" onclick="AgentCtrl.addResources()">Add Resources</button>
       <button class="btn danger" onclick="Dialog.close()">Cancel</button>
     </p>
   </div>
