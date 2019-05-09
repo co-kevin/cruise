@@ -12,7 +12,7 @@ In modern agile software development practice, there is a development practice c
 ## NICE TO HAVE
 
 - Implement Responsive Design ❎
-- Javascript Unit Test ❎
+- Javascript Unit Test ✅
 
 ## Project setup
 ```
