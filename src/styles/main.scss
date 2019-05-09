@@ -242,8 +242,27 @@ main {
     margin-right: 10px;
   }
 
+  .overview {
+    display: flex;
+    align-items: center;
+    width: 350px;
+  }
+
   .status {
+    font-size: 12px;
+    display: block;
+    color: #fff;
     margin-right: 10px;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+
+    &.idle {
+      background-color: $color-success;
+    }
+    &.buiding {
+      background-color: $color-warning;
+    }
   }
 
   i {

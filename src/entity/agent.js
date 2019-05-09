@@ -37,6 +37,7 @@ export default class Agent {
     os.classList.add(this.os)
     host.innerHTML = this.host
     status.innerHTML = this.status
+    status.classList.add(this.status)
     ipaddr.innerHTML = this.ipaddr
     path.innerHTML = this.path
     btn.setAttribute('data-id', this.id)
